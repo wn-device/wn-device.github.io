@@ -47,14 +47,12 @@ Latent te facies
 Lorem markdownum arma ignoscas vocavit quoque ille texit mandata mentis ultimus, frementes, qui in vel. Hippotades Peleus pennas conscia cuiquam Caeneus quas.
 Pater demittere evincitque reddunt Maxime adhuc pressit huc Danaas quid freta Soror ego Luctus linguam saxa ultroque prior Tatiumque inquit Saepe liquitur subita superata dederat Anius sudor Cum honorum Latona
 #
-O fallor in sustinui iussorum equidem.</description></item><item><title/><link>/docs/shortcodes/buttons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/shortcodes/buttons/</guid><description>
-MATLABcode
+O fallor in sustinui iussorum equidem.</description></item><item><title/><link>/docs/shortcodes/buttons/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/shortcodes/buttons/</guid><description>MATLABcode
 #
 Buttons are styled links that can lead to local page or external link.
 MATLAB_code_
 #
-% clear data = [1,2,3;4,5,6;7,8,9] size_data = size(data); data_expand = zeros(size_data(1)+2,size_data(2)+2); data_expand(2:size_data(2)+1,2:size_data(2)+1) =data; data_expand(2:size_data(2)+1,1) = data(:,2); data_expand(2:size_data(2)+1,size_data(2)+2) = data(:,size_data(2)-1); data_expand(1,:) = data_expand(3,:); data_expand(size_data(1)+2,:) = data_expand(size_data(1),:); % a_expand = mean_kernel =ones(3,3) mean_kernel_sum = 9; Gaussian_kernel = [1;2;1]*[1,2,1]; Gaussian_kernel_sum = 16; % mean filter y = imfilter(data_expand,mean_kernel); mean_data_filter = y(2:size_data(1)+1,2:size_data(2)+1) % gaussian filter y = imfilter(data_expand,Gaussian_kernel); Gaussian_data_filter = y(2:size_data(1)+1,2:size_data(2)+1); Get Home
-Contribute</description></item><item><title/><link>/docs/shortcodes/columns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/shortcodes/columns/</guid><description>Columns
+% clear data = [1,2,3;4,5,6;7,8,9] size_data = size(data); data_expand = zeros(size_data(1)+2,size_data(2)+2); data_expand(2:size_data(2)+1,2:size_data(2)+1) =data; data_expand(2:size_data(2)+1,1) = data(:,2); data_expand(2:size_data(2)+1,size_data(2)+2) = data(:,size_data(2)-1); data_expand(1,:) = data_expand(3,:); data_expand(size_data(1)+2,:) = data_expand(size_data(1),:); % a_expand = mean_kernel =ones(3,3) mean_kernel_sum = 9; Gaussian_kernel = [1;2;1]*[1,2,1]; Gaussian_kernel_sum = 16; % mean filter y = imfilter(data_expand,mean_kernel); mean_data_filter = y(2:size_data(1)+1,2:size_data(2)+1) % gaussian filter y = imfilter(data_expand,Gaussian_kernel); Gaussian_data_filter = y(2:size_data(1)+1,2:size_data(2)+1); figure_path = &amp;#34;sv9001t_crash_10to16bit.</description></item><item><title/><link>/docs/shortcodes/columns/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/docs/shortcodes/columns/</guid><description>Columns
 #
 Columns help organize shorter pieces of content horizontally for readability.
 {{&amp;lt; columns &amp;gt;}} &amp;lt;!-- begin columns block --&amp;gt; # Left Content Lorem markdownum insigne... &amp;lt;---&amp;gt; &amp;lt;!-- magic separator, between columns --&amp;gt; # Mid Content Lorem markdownum insigne... &amp;lt;---&amp;gt; &amp;lt;!-- magic separator, between columns --&amp;gt; # Right Content Lorem markdownum insigne... {{&amp;lt; /columns &amp;gt;}} Example
