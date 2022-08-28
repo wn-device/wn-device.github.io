@@ -1,0 +1,20 @@
+% ftest
+fp=fopen("./build/test_mean.dat","rb");
+c_data = fread(fp,1023*9,"uint16");
+c_data_ = c_data.';
+fclose(fp);
+mat_data_sum = 0:1:(1023*9-1);
+mat_data_9 = round(mat_data_sum/9);
+error =abs(c_data_-mat_data_9);
+sum(error)
+max(error)
+% % % % % % % % % % % % % % % % % % 
+fp=fopen("./build/test_gaussian.dat");
+c_data_gau = fread(fp,1023*16,"uint16");
+c_data_gau_ = c_data_gau.';
+fclose(fp);
+mat_data_sum_gau = 0:1:(1023*16-1);
+mat_data_16 = round(mat_data_sum_gau/16);
+error_gau =abs(c_data_gau_-mat_data_16);
+sum(error_gau)
+max(error)
